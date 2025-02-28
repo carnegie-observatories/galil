@@ -20,7 +20,7 @@ class Galil(object):
     soft_limits: Tuple[int, int] = (3800000, 292000000)  # aux encoder counts
     zero_deg_position: float = 1672  # mm
 
-    def __init__(self, ip_address, port, auto_connect=True):
+    def __init__(self, ip_address: str, port: int = 23, auto_connect: bool = True) -> None:
         self.ip_address = ip_address
         self.port = port
         self._socket = None
