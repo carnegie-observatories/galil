@@ -1,0 +1,17 @@
+[project]
+name = "galil"
+version = "0.1.0"
+description = "Galil motion controller library"
+readme = "README.md"
+authors = [
+    { name = "William Schoenell", email = "wschoenell@carnegiescience.edu" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+galil = "galil:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
